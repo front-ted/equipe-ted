@@ -84,47 +84,15 @@ p, li, a, td {
   transition: all 0.3s;
   box-shadow: #c5c5c5 6px 6px 12px, #ffffff -6px -6px 12px;
 }
-.painel-equipes button:active, .painel-equipes button:hover {
-  color: #fff;
-  background-color: #0d73a5;
+.painel-equipes button:hover {
+  color: #0d73a5;
+  background-color: #f5f5f5;
+  box-shadow: #c5c5c5 10px 10px 20px, #ffffff -10px -10px 20px;
+}
+.painel-equipes button:active{
+  box-shadow: #c5c5c5 3px 3px 6px inset, #ffffff -3px -3px 6px inset;
 }
 
-.icone{
-  width: 100px !important;
-  height: 100px !important;
-  display: inline-block;
-  border-radius: 100%;
-  box-shadow: 20px 20px 60px #bebebe,
-              -20px -20px 60px #ffffff;
-  background-size: 420% !important;
-}
-
-.div-container{
-  display: inline-flex;
-  min-height: 240px;
-  height: 100%;
-  align-items: center;
-  width: 85%;
-  right: 0px !important;
-  position: absolute;
-  border-radius: 10px;
-  padding: 0 !important;
-  filter: drop-shadow(#333333 10px 10px 30px);
-}
-
-.container_01{background-color: #0c2c3f;}
-.container_02{background-color: #1a2a50;}
-.container_03{background-color: #124182;}
-.container_04{background-color: #20358e;}
-.container_05{background-color: #0461b2;}
-.container_06{background-color: #6f92d4;}
-
-.container_01 h3{color: #0c2c3f;}
-.container_02 h3{color: #1a2a50;}
-.container_03 h3{color: #124182;}
-.container_04 h3{color: #20358e;}
-.container_05 h3{color: #0461b2;}
-.container_06 h3{color: #6f92d4;}
 
 .titulo{
   display: inline-block;
@@ -153,22 +121,7 @@ p, li, a, td {
     padding-bottom: 50px;
   }
 
-  .div-container{
-    width: 82%;
-    height: auto;
-  }
 
-  .timeline_06{
-    margin-top: 75px;
-  }
-  .container_06{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .container_06 .conteudo{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 }
 
 @media screen and (max-width: 480px){
@@ -176,28 +129,5 @@ p, li, a, td {
     padding: 30px 30px 150px 30px;
   }
 
-  .timeline{
-    margin-top: 100px;
-    margin-bottom: 180px !important;
-  }
-  .icone{
-    display: block;
-    margin: auto;
-    margin-top: -70px;
-  }
-  .div-container{
-    width: 100%;
-    margin-top: 100px;
-    height: auto;
-  }
-  .container_06{
-    margin-top: 320px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .container_06 .conteudo{
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 
 }
