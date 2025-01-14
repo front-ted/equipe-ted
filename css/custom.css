@@ -25,7 +25,7 @@ body {
 html{scroll-behavior: smooth;}
 
 .container{
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 80px;
   max-width: 990px;
 }
@@ -36,7 +36,7 @@ h1{
   margin: 0;
   color: #0d73a5;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 h2{
   font-size: 32px;
@@ -49,6 +49,7 @@ h3 {
   font-weight: bold;
   margin: 0;
   margin-bottom: 15px;
+  color: #0d73a5;
 }
 h4{
   font-weight: bold;
@@ -69,11 +70,24 @@ p, li, a, td {
 
 
 /*-------- MODAIS --------*/
+.modal .modal-dialog{
+  width: 80%;
+}
+.modal-content{
+  border-radius: 20px;
+  padding: 40px 0px;
+}
+
+.modal-100 .modal-dialog{
+  width: 100%;
+}
 .modal-100 .modal-content{
+  /*
   background: url('../imgs/bg_modal.png') no-repeat;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
+  */
 }
 .modal-100 .modal-body .container{
   background-color: #fff;
@@ -82,15 +96,23 @@ p, li, a, td {
   padding: 40px 60px 0px 60px;
   border-radius: 20px;
 }
+.modal .modal-body .container{
+  position: relative;
+  padding: 0px 0px;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .btn-fechar, .btn-default{
-  width: 120px;
-  height: 60px;
+  width: 140px;
+  height: 70px;
   font-family: Poppins-Regular;
   font-weight: bold;
   transition: all 0.3s;
   background-color: #fff;
   box-shadow: #c5c5c5 4px 4px 8px, #ffffff -4px -4px 8px;
   border-radius: 15px;
+  border: none;
 }
 .btn-fechar::before, .btn-default::before{
   content: 'Fechar';
@@ -100,9 +122,13 @@ p, li, a, td {
   background-color: #f5f5f5;
   box-shadow: #c5c5c5 6px 6px 12px, #ffffff -6px -6px 12px;
 }
+.btn-fechar:active{
+  box-shadow: #c5c5c5 3px 3px 6px inset, #ffffff -3px -3px 6px inset;
+}
+
 .btn-fechar{
   position: relative;
-  margin: 80px auto 40px auto;
+  margin: 40px auto 0px auto;
   display: block;
 }
 .ico-fechar{padding-top: 25px;}
@@ -136,7 +162,7 @@ p, li, a, td {
   box-shadow: #c5c5c5 3px 3px 6px inset, #ffffff -3px -3px 6px inset;
 }
 
-.btn-producao{
+.btn-fluxo{
   display: block;
   margin: auto;
   margin-top: 80px;
@@ -147,16 +173,43 @@ p, li, a, td {
   transition: all 0.3s;
   box-shadow: #c5c5c5 8px 8px 16px, #ffffff -8px -8px 16px;
 }
-.btn-producao:hover {
+.btn-fluxo:hover {
   color: #0d73a5;
   background-color: #f5f5f5;
   box-shadow: #c5c5c5 12px 12px 24px, #ffffff -12px -12px 24px;
 }
-.btn-producao:active{
+.btn-fluxo:active{
   box-shadow: #c5c5c5 3px 3px 6px inset, #ffffff -3px -3px 6px inset;
 }
 
+.div-equipe{
+  text-align: center;
+}
+.card-colaborador{
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: #c5c5c5 4px 4px 8px, #ffffff -4px -4px 8px;
+  transform: scale(0.9);
+}
+.img-foto{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin: 20px auto;
+  border: #fff solid 3px;
+  box-shadow: #c5c5c5 3px 3px 6px, #ffffff -3px -3px 6px;
+}
+.div-nome{
+  margin: 20px auto;
+}
 
+
+/*
 .titulo{
   display: inline-block;
   color: #fff !important;
@@ -175,7 +228,7 @@ p, li, a, td {
   padding-left: 30px;
   padding-right: 30px;
 }
-
+*/
 
 
 @media screen and (max-width: 820px){
@@ -184,6 +237,9 @@ p, li, a, td {
     padding-bottom: 50px;
   }
 
+  .modal .modal-dialog{
+    width: 90%;
+  }
 
 }
 
@@ -192,5 +248,8 @@ p, li, a, td {
     padding: 30px 30px 150px 30px;
   }
 
+  .modal .modal-dialog{
+    width: 95%;
+  }
 
 }

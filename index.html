@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Timeline</title>
+    <title>Equipe TED</title>
 
     <!-- CSS Base -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,9 @@
             <div class="container">
 
               <h1>Equipe TED</h1>
+              <h2>Fluxo de produção</h2>
 
+              <!---->
               <div class="painel-equipes">
                 <button type="button" class="btn-consultoras" data-toggle="modal" data-target="#modal-consultoras">Consultoras</button>
                 <button type="button" class="btn-des" data-toggle="modal" data-target="#modal-des">Designers Educacionais</button>
@@ -56,7 +58,11 @@
                 <button type="button" class="btn-objetos" data-toggle="modal" data-target="#modal-objetos">Equipe de Objetos</button>
               </div>
 
-              <button type="button" class="btn-producao" data-toggle="modal" data-target="#modal-producao">Conheça a linha de produção clicando aqui</button>
+              <button type="button" class="btn-fluxo" data-toggle="modal" data-target="#modal-fluxo">Conheça o fluxo de produção clicando aqui</button>
+              
+
+
+
               
             </div>
           </div>
@@ -79,19 +85,37 @@
 
     </div>
 
-    <!-- Modais 100% -->
-    <div class="modal modal-100 fade" id="modal-consultoras" aria-hidden="true">
+    <!-- Modais 100%-->
+    <div class="modal fade" id="modal-consultoras" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Consultoras</h3>
+              <p>Lorem ipsum dolor sit, fuga rem labore magni accusamus aut velit saepe adipisci unde cumque, deleniti, numquam nostrum ratione soluta illum quaerat corrupti culpa autem.</p>
 
+              <div class="div-equipe">
+                <div class="card-colaborador">
+                  <img src="imgs/equipe/consultoras/joceara.png" class="img-foto">
+                  <h4 class="div-nome">Joceara dos Santos Roedes</h4>
+                  <div class="div-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="card-colaborador">
+                  <img src="imgs/equipe/consultoras/julliana.png" class="img-foto">
+                  <h4 class="div-nome">Julliana Cunha Alves</h4>
+                  <div class="div-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="card-colaborador">
+                  <img src="imgs/equipe/consultoras/michele.png" class="img-foto">
+                  <h4 class="div-nome">Michele da Rocha Souza</h4>
+                  <div class="div-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="card-colaborador">
+                  <img src="imgs/equipe/consultoras/patricia.png" class="img-foto">
+                  <h4 class="div-nome">Patricia Vanessa Rossato Mendonca</h4>
+                  <div class="div-infos">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
 
               <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
             </div>
@@ -99,14 +123,9 @@
         </div>
       </div>
     </div>
-    <div class="modal modal-100 fade" id="modal-des" aria-hidden="true">
+    <div class="modal fade" id="modal-des" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Designers Educacionais</h3>
@@ -118,14 +137,9 @@
         </div>
       </div>
     </div>
-    <div class="modal modal-100 fade" id="modal-revisoras" aria-hidden="true">
+    <div class="modal fade" id="modal-revisoras" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Revisoras</h3>
@@ -137,14 +151,9 @@
         </div>
       </div>
     </div>
-    <div class="modal modal-100 fade" id="modal-designers" aria-hidden="true">
+    <div class="modal fade" id="modal-designers" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Designers Gráficos</h3>
@@ -156,14 +165,9 @@
         </div>
       </div>
     </div>
-    <div class="modal modal-100 fade" id="modal-fronts" aria-hidden="true">
+    <div class="modal fade" id="modal-fronts" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Front-End</h3>
@@ -175,20 +179,31 @@
         </div>
       </div>
     </div>
-    <div class="modal modal-100 fade" id="modal-objetos" aria-hidden="true">
+    <div class="modal fade" id="modal-objetos" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content no-print">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
           <div class="modal-body">
             <div class="container">
               <h3>Equipe de Objetos</h3>
 
 
               <button type="button" class="btn btn-fechar" data-dismiss="modal"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal modal-100 fade" id="modal-fluxo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content no-print">
+          <div class="modal-body">
+            <div class="container">
+              <h3>Fluxo de produção</h3>
+
+
+              <button type="button" class="btn-fechar" data-dismiss="modal"></button>
             </div>
           </div>
         </div>
