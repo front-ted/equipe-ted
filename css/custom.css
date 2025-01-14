@@ -1,0 +1,217 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("../font/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../font/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("../font/Poppins-SemiBold.ttf");
+}
+
+
+body {
+  background: linear-gradient(90deg, #d4d4d4, #fff);
+  height: auto;
+  overflow-x: hidden;
+}
+
+html{scroll-behavior: smooth;}
+
+.elemento1{margin-left: -33%;}
+.elemento2{
+  margin-top: 40px;
+  margin-left: -15%;
+}
+
+.container{
+  padding-top: 60px;
+  padding-bottom: 80px;
+  max-width: 990px;
+}
+
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  color: #0d73a5;
+  text-align: center;
+}
+h2{
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #0d73a5;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+h4{
+  font-weight: bold;
+}
+h5 {
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Poppins-Bold;
+}
+p, li, a, td {
+  font-family: Poppins-Regular;
+  font-size: 1.2em;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.timeline{
+  margin: 50px auto;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.icone{
+  width: 100px !important;
+  height: 100px !important;
+  display: inline-block;
+  border-radius: 100%;
+  filter: drop-shadow(#323232 8px 8px 10px);
+  background-size: 420% !important;
+}
+.timeline_01 .icone{
+  background: url('../imgs/timeline01_01.svg') no-repeat center bottom 30%;
+  background-color: #0c2c3f;
+}
+.timeline_02 .icone{
+  background: url('../imgs/timeline01_02.svg') no-repeat center bottom 30%;
+  background-color: #1a2a50;
+}
+.timeline_03 .icone{
+  background: url('../imgs/timeline01_03.svg') no-repeat center bottom 30%;
+  background-color: #124182;
+}
+.timeline_04 .icone{
+  background: url('../imgs/timeline01_04.svg') no-repeat center bottom 30%;
+  background-color: #20358e;
+}
+.timeline_05 .icone{
+  background: url('../imgs/timeline01_05.svg') no-repeat center bottom 30%;
+  background-color: #0461b2;
+}
+.timeline_06 .icone{
+  background: url('../imgs/timeline01_06.svg') no-repeat center bottom 30%;
+  background-color: #6f92d4;
+}
+
+.div-container{
+  display: inline-flex;
+  min-height: 240px;
+  height: 100%;
+  align-items: center;
+  width: 85%;
+  right: 0px !important;
+  position: absolute;
+  border-radius: 10px;
+  padding: 0 !important;
+  filter: drop-shadow(#333333 10px 10px 30px);
+}
+
+.container_01{background-color: #0c2c3f;}
+.container_02{background-color: #1a2a50;}
+.container_03{background-color: #124182;}
+.container_04{background-color: #20358e;}
+.container_05{background-color: #0461b2;}
+.container_06{background-color: #6f92d4;}
+
+.container_01 h3{color: #0c2c3f;}
+.container_02 h3{color: #1a2a50;}
+.container_03 h3{color: #124182;}
+.container_04 h3{color: #20358e;}
+.container_05 h3{color: #0461b2;}
+.container_06 h3{color: #6f92d4;}
+
+.titulo{
+  display: inline-block;
+  color: #fff !important;
+  width: 80px;
+  text-align: center;
+}
+.conteudo{
+  display: inline-block;
+  align-content: center;
+  min-height: 240px;
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  background-color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+@media screen and (max-width: 820px){
+  .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .div-container{
+    width: 82%;
+    height: auto;
+  }
+
+  .timeline_06{
+    margin-top: 75px;
+  }
+  .container_06{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container_06 .conteudo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    padding: 30px 30px 150px 30px;
+  }
+
+  .timeline{
+    margin-top: 100px;
+    margin-bottom: 180px !important;
+  }
+  .icone{
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+  }
+  .div-container{
+    width: 100%;
+    margin-top: 100px;
+    height: auto;
+  }
+  .container_06{
+    margin-top: 320px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container_06 .conteudo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
