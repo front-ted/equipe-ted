@@ -17,7 +17,7 @@
 
 
 body {
-  background: linear-gradient(90deg, #f0f0f3, #fff);
+  background: linear-gradient(90deg, #f0f0f3, #ebebeb);
   height: auto;
   overflow-x: hidden;
 }
@@ -76,6 +76,7 @@ p, li, a, td {
 .modal-content{
   border-radius: 20px;
   padding: 40px 0px;
+  background-color: #ebebeb;
 }
 
 .modal-100 .modal-dialog{
@@ -190,7 +191,7 @@ p, li, a, td {
   width: 250px;
   height: 400px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
   padding: 20px 30px;
   text-align: center;
   box-shadow: #c5c5c5 4px 4px 8px, #ffffff -4px -4px 8px;
@@ -201,7 +202,7 @@ p, li, a, td {
   height: 150px;
   border-radius: 100%;
   margin: 20px auto;
-  border: #fff solid 3px;
+  border: #fff solid 4px;
   box-shadow: #c5c5c5 3px 3px 6px, #ffffff -3px -3px 6px;
 }
 .div-nome{
@@ -229,6 +230,16 @@ p, li, a, td {
   padding-right: 30px;
 }
 */
+
+
+.video-youtube{
+  width: 640px;
+  height: 360px;
+  display: block;
+  margin: 40px auto;
+  border-radius: 40px;
+  box-shadow: #c5c5c5 8px 8px 16px, #ffffff -8px -8px 16px;
+}
 
 
 @media screen and (max-width: 820px){
