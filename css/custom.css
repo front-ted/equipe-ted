@@ -252,11 +252,17 @@ p, li, a, td {
     width: 90%;
   }
 
+  .painel-equipes{
+    display: block;
+    text-align: center;
+  }
+  
+
 }
 
 @media screen and (max-width: 480px){
   .container{
-    padding: 30px 30px 150px 30px;
+    padding: 60px 30px 100px 30px;
   }
 
   .modal .modal-dialog{
