@@ -91,7 +91,7 @@ p, li, a, td {
   */
 }
 .modal-100 .modal-body .container{
-  background-color: #fff;
+  background-color: transparent;
   position: relative;
   margin-bottom: 30px;
   padding: 40px 60px 0px 60px;
